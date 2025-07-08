@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <title>Matcha Login</title> 
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body class="flex items-center justify-center min-h-screen"> 
+ 
+  <div class="auth-card p-6 rounded-lg w-full max-w-sm"> 
+    <h2 class="text-xl font-semibold text-center text-[#406343] mb-4">Login</h2> 
+ 
+    <form id="loginForm"> 
+      <!-- Role Selection --> 
+      <label class="block mb-1 text-[#406343]">Select Role</label> 
+      <div id="roles" class="space-y-2 mb-4"> 
+        <div class="role-option" data-role="Department Head">Department Head</div> 
+        <div class="role-option" data-role="Faculty">Faculty</div> 
+        <div class="role-option" data-role="Student Officer">Student Officer</div> 
+        <div class="role-option" data-role="Student">Student</div> 
+      </div> 
+      <input type="hidden" id="selectedRole" required> 
+ 
+      <!-- Password Input --> 
+      <label class="block mb-1 text-[#406343]">Password</label> 
+      <input type="password" id="password" class="w-full border rounded-md px-3 py-2 mb-4" placeholder="Enter password" required> 
+ 
+      <!-- Login Button --> 
+      <button type="submit" class="login-btn w-full py-2 text-white rounded-md">Login</button>     </form> 
+ 
+    <!-- Result Message --> 
+    <div id="message" class="mt-4 text-center text-sm font-medium"></div> 
+  </div> 
+ 
+  <script src="script.js"></script> 
+</body> 
+</html> 

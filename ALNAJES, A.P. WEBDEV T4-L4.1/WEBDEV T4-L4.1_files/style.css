@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
+ 
+body {   font-family: 'Poppins', sans-serif;   background-color: #f3fdf2;   margin: 0;   padding: 0; 
+} 
+ 
+.auth-card {   background-color: white;   box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1); 
+} 
+ 
+.role-option {   border: 2px solid #e0f2e9;   padding: 8px;   border-radius: 6px;   cursor: pointer;   text-align: center; 
+} 
+ 
+.role-option.selected {   background-color: #e6f4ea;   border-color: #74a984; 
+} 
+ 
+.login-btn {   background-color: #74a984; 
+} 
+ 
+.login-btn:hover {   background-color: #5c8f6b; 
+} 
